@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="author" content="Robbe van der Lee, MG1A">
+    <link rel="stylesheet" href="styles.css">
+    <title> Image viewer 2019 </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="viewer">
+            <figure class="item--1">
+                <!-- LOGO -->
+                <img src="images/ma_logo.jpeg" alt="MA logo" class="Logo_img">
+            </figure>
+            
+            <figure class="item--2">
+                <!-- Large images -->
+                <img src="" id="display" alt="" class="large_img">
+            </figure>
+
+            <figure class="item--3">
+                <!-- control container -->
+                <div class="left">
+                    <img src="images/left.jpg" onclick="cycle(true)" alt="Arrow left" class="viewer_control">
+                </div>
+                <div class="right">
+                    <img src="images/right.jpg" onclick="cycle(false)" alt="Arrow right" class="viewer_control">
+                </div>
+            </figure>
+
+            <figure class="item--4">
+                <!-- thumb images -->
+                <div id="small">
+                    <div id="tumbs"></div>
+                </div>
+            </figure>
+
+        </div>
+    </div>
+    <footer>
+        <p> Alle foto's zijn van Robbe van der Lee en te vinden op zijn instagram.</p>  
+        <a class="link" href="https://www.instagram.com/robbe.vanderlee/" target="_blank">@robbe.vanderlee</a>
+        <div id="validatie">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+            </a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
